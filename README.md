@@ -39,7 +39,7 @@ There was also an attempt at using the length of strings to determine which type
 
 I definitely used really unconventional (terrible) naming conventions and if-structures. I can't remember why. It might have been a joke. I certainly had fun making it. When looking at it now, it does seem like a mix between a bad joke and a "don't do this".
 
-*Don't* name variables or functions like this:
+*Don't* use naming schemes like this:
 ```c#
         internal override bool IsPrimeOrIsNotPrimeAndGetDividedBy() 
         {
