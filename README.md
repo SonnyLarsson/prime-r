@@ -12,6 +12,14 @@ One day I'll probably redo everything, but well.
 
 <br>
 
+<br>
+
+![Screenshiot`](Screenshot.png "Screenshot")
+
+*Input a number and press the **enter** key on your keyboard or click on the **calc** button.*
+
+<br>
+
 ## Explaining myself
 
 I had an idea of turning the logic behind this project into a dll, and using it as a part of other projects. Among other things, I was planning on making a mobile math app. Therefore, the main project sits in its own prime-r.main subfolder.
@@ -19,6 +27,7 @@ I had an idea of turning the logic behind this project into a dll, and using it 
 The rest of the math project currently appears to be lost in time. At the time, the love of my life was moving in, and so, distractions aplenty made me drop the project. If I ever find the rest, I'll put it in this repo.
 
 The algorithm itself comes close to an algorithm used by MIT for prime number detection. The current loop is a reversed version of my original loop, which wasn't very efficient, memory-wise. The MIT-inspired algorithm starts from the bottom and works itself up to half the number being tested, and if the number isn't divisible by any number along the way, the number is a prime.
+
 
 <br>
 
@@ -29,6 +38,26 @@ I was playing around with some ideas about instant detection of non-primes in st
 There was also an attempt at using the length of strings to determine which type of variable I needed to store a number in. The idea was that I'd save memory by not allocating more space than necessary for a number. Honestly, I don't think this even came close to being worthwhile on modern hardware. An especially terrible feature included with using different variables for different length numbers, is a strange setup with with several nearly identical classes for calculating prime numbers, for some reason living in a "Types" namespace. Why I did it this way, I can't remember. Perhaps I'd found some incredibly small memory issue involving generics.
 
 I definitely used really unconventional (terrible) naming conventions and if-structures. I can't remember why. It might have been a joke. I certainly had fun making it. When looking at it now, it does seem like a mix between a bad joke and a "don't do this".
+
+*Don't* name variables or functions like this:
+```c#
+        internal override bool IsPrimeOrIsNotPrimeAndGetDividedBy() 
+        {
+            var halfwayPoint = Convert.ToDouble(numberShort) / 2;
+
+            for (short i = 2; i < halfwayPoint + 1; i++)
+            {
+                if (numberShort % i == 0 && i != numberShort)
+                {
+                    divisibleByShort = i;
+                    return false;
+                }
+            }
+
+            divisibleByShort = numberShort;
+            return true;
+        }
+```
 
 <br>
 
