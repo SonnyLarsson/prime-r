@@ -4,7 +4,7 @@ A simple prime number detector.
 
 <br>
 
-A friend once told me an interviewer asked him to whiteboard something for detecting if a number was a prime. This a sample application I wrote to demonstrate a possible solution to the problem. Or at least, that was the original idea.
+A friend once told me an interviewer asked him to whiteboard something for detecting if a number was a prime. This is a sample application I wrote to demonstrate a possible solution to the problem. Or at least, that was the original idea.
 
 This project dates back to 2016 or 2017, and it has some quirks I came up with for the sake of, frankly speaking silly, optimization. Nevertheless, it has never been in a repo before, as far as I can remember. I figured it was high time to document my oddball prime number detector on GitHub, for posterity. This is far from my best work, but I rather enjoyed making it at the time.
 
