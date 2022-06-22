@@ -61,10 +61,6 @@ I definitely used really unconventional (terrible) naming conventions and if-str
 
 <br>
 
-Also, parts of it were written while I was drunk.
-
-<br>
-
 In short, don't write your code like this.
 
 <br>
